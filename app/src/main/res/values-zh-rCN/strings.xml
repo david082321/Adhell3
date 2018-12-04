@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name" translatable="false">Adhell 3</string>
+    <string name="domain_rules_enabled">域名规则已开启。</string>
+    <string name="domain_rules_disabled">域名规则已关闭。</string>
+    <string name="domain_rules_info">
+        黑名单：%1$d个域名 | 白名单：%2$d个域名及%3$d个应用
+    </string>
+    <string name="firewall_rules_enabled">防火墙规则已开启。</string>
+    <string name="firewall_rules_disabled">防火墙规则已关闭。</string>
+    <string name="firewall_rules_info">
+        移动数据：%1$d个应用 | Wi-Fi：%2$d个应用 | 自定义：%3$d个应用
+    </string>
+    <string name="app_disabler_enabled">应用管理已开启。</string>
+    <string name="app_disabler_disabled">应用管理已关闭。</string>
+    <string name="app_disabler_info">
+        %1$d个应用已禁用。
+    </string>
+    <string name="app_component_enabled">应用元件已开启。</string>
+    <string name="app_component_disabled">应用元件已关闭。</string>
+    <string name="app_component_toggle_info">
+        %1$d个权限，%2$d个服务及%3$d个接收器已禁用。
+    </string>
+    <string name="adhell_not_supported">Adhell 目前不支持您的装置。</string>
+    <string name="enable_adhell_title">开启 Adhell</string>
+    <string name="enable_adhell_info">
+        开启 Adhell 前，你必须开启本应用的装置管理员。
+        \nAdhell 使用的 Samsung Knox APIs 要求必须有装置管理员权限。
+    </string>
+    <string name="turn_on_admin">开启管理员</string>
+    <string name="license_key_info">
+        Adhell 使用 Samsung Knox Standard SDK，该 SDK 需要开发人员授权密钥 (Enterprise license key/ELM)。
+        \n一个授权密钥最多激活 10 个装置(超过将全部失效)，并且有 3 个月内激活的限制(到期后可以再次申请)。
+    </string>
+    <string name="license_key">输入 ELM (Enterprise license key)</string>
+    <string name="license_backward_key">向后兼容密钥</string>
+    <string name="activate_license">激活授权</string>
+    <string name="license_activated">授权已激活</string>
+    <string name="enable_admin">开启管理员</string>
+    <string name="admin_enabled">管理员已开启</string>
+    <string name="no_internet_connection">您的装置未连上网络</string>
+    <string name="activating_knox_license">激活中…</string>
+    <string name="block_button_text_turn_off">关闭</string>
+    <string name="block_button_text_turn_on">开启</string>
+    <string name="whitelist_info">
+        白名单域名可以不被防火墙拦截。
+        \n重开 域名规则 以应用变更。
+    </string>
+    <string name="delete_app">关闭并移除 Adhell</string>
+    <string name="delete_app_summary">关闭所有功能并移除 Adhell</string>
+    <string name="delete_app_dialog_title">删除 Adhell</string>
+    <string name="delete_app_dialog_text">确定要解除安装 Adhell，并启用所有被禁用的应用吗？</string>
+    <string name="dns_1_address">DNS 1 地址</string>
+    <string name="dns_2_address">DNS 2 地址</string>
+    <string name="set_dns_button_text">设置 DNS</string>
+    <string name="dns_info">
+        请务必确认您已了解您正在做什么，然后再修改 DNS。
+        \n重开 域名规则 以应用变更。
+    </string>
+    <string name="blacklist_info">
+        域名黑名单 或 自定义防火墙拒绝规则。
+        \n重开 域名规则 以应用变更。
+        \n重开 防火墙规则 以应用防火墙变更。
+    </string>
+    <string name="dialog_blacklist_domain_title">添加域名</string>
+    <string name="dialog_blacklist_domain_info">域名支持万用字符，例如：*facebook.com</string>
+    <string name="dialog_blacklist_rule_title">添加防火墙规则</string>
+    <string name="dialog_blacklist_rule_info">
+        防火墙规则格式：
+        \n\tpackageName|ipAddress|port\n\t包名|ip地址|埠\n\t包名|ip地址|埠\n\t包名|ip地址|埠
+        \n例如：拦截 Chrome 的所有 IP 的 53埠：
+        \n\tcom.android.chrome|*|53
+    </string>
+    <string name="dialog_whitelist_domain_title">添加域名</string>
+    <string name="dialog_whitelist_domain_info">
+        域名支持万用字符，例如：*facebook.com
+        \n指定应用使用域名规则格式：
+        \n\tpackageName|domain\n\t包名|域名\n\t包名|域名\n\t包名|域名
+    </string>
+    <string name="dialog_add_provider_title">添加来源</string>
+    <string name="dialog_add_provider_info">
+        在线：https://adaway.org/hosts.txt
+        \n本机：file:///mnt/sdcard/hosts.txt
+    </string>
+    <string name="dialog_enable_components_title">启用所有元件</string>
+    <string name="dialog_enable_components_info">
+        即将启用所有应用的权限、服务、接收器。
+        \n三星 Knox 并未提供 API 来清理禁用元件。
+        \n因此，如果操作后元件仍然禁用，请在设置解除安装 Adhell 来恢复。
+        \n\n确定要启用所有应用应用的元件吗？
+    </string>
+    <string name="dialog_toggle_title">自定义所有应用 DNS</string>
+    <string name="dialog_toggle_info">
+        您真的想为所有程序应用或移除自定义 DNS 吗？
+        \n使用自定义 DNS 的应用，可能会导致该应用的网络连线出现故障
+    </string>
+    <string name="dialog_add_to_whitelist_question">要将所选域名加入白名单吗？</string>
+    <string name="home_bottombar_title" translatable="false">首页</string>
+    <string name="package_disabler_fragment_title">禁用应用</string>
+    <string name="apps_management_bottombar_title">应用</string>
+    <string name="domains_bottombar_title">域名</string>
+    <string name="last_day_blocked">最近 24 小时拦截域名：&#160;</string>
+    <string name="check_input_dns">无效 DNS 格式。</string>
+    <string name="changed_dns">DNS 地址已设置。 重开 域名规则 以应用变更。</string>
+    <string name="restored_dns">DNS 已还原默认。 重开 域名规则 以应用变更。</string>
+    <string name="delete_url">删除网址</string>
+    <string name="provider_info">
+        除了 Adhell 内置拦截，您也可以使用在线或是本机的 hosts 列表。
+        \nAdhell 最多可以拦截 %1$d 个独立域名。
+        \n重开 域名规则 以应用变更。
+    </string>
+    <string name="total_unique_domains">总域名数：%1$d</string>
+    <string name="others_bottombar_title">其他</string>
+    <string name="mobile_restricter_fragment_title">移动数据</string>
+    <string name="wifi_restricter_fragment_title">Wi-Fi 数据</string>
+    <string name="enabled_all_apps">启用所有应用…</string>
+    <string name="total_domains">总域名数：&#160;</string>
+    <string name="package_disabler_info">
+        禁用的应用不会在桌面及应用里看到。
+        \n如果 应用管理 已开启，变更将立即生效。
+    </string>
+    <string name="mobile_restricter_info">
+        拦截 或 允许 应用的 移动数据 使用。
+        \n重开 防火墙规则 以应用变更。
+    </string>
+    <string name="wifi_restricter_info">
+        拦截 或 允许 应用的 Wi-Fi 使用。
+        \n重开 防火墙规则 以应用变更。
+    </string>
+    <string name="whitelisted_app_info">
+        加入白名单的应用可以不被防火墙拦截。
+        \n重开 域名规则 以应用变更。
+    </string>
+    <string name="app_component_info">
+        禁用应用元件 (权限、服务 及 接收器)。
+        \n如果 应用元件 已开启，变更将立即生效。
+    </string>
+    <string name="app_permission_info">
+        只能禁用\'危险\'级别的权限。
+        \n禁用某个权限，将一并禁用同个群组内的权限。
+    </string>
+    <string name="app_service_info">
+        禁用服务可能导致应用崩溃。
+        \n一旦服务被禁用，它将从应用中删除。
+        \n三星 Knox 没有提供 API 能列出禁用的服务。
+        \n因此，如果禁用的服务没出现在下面，则需要重新安装应用。
+    </string>
+    <string name="app_receiver_info">
+        禁用接收器可能导致应用崩溃。
+        \n一旦接收器被禁用，它将从应用中删除。
+        \n三星 Knox 没有提供 API 能列出禁用的接收器。
+        \n因此，如果禁用的接收器没出现在下面，则需要重新安装应用。
+    </string>
+    <string name="backup_database">备份数据库</string>
+    <string name="backup_database_summary">将所有设置备份到内部存储的备份文件。</string>
+    <string name="restore_database">还原数据库</string>
+    <string name="restore_database_summary">从备份文件还原所有设置。 需要授予\'存储\'权限。</string>
+    <string name="whitelist_fragment_title">应用白名单</string>
+    <string name="blacklist_url_fragment_title">黑名单</string>
+    <string name="whitelist_url_fragment_title">白名单</string>
+    <string name="provider_url_fragment_title">来源</string>
+    <string name="list_url_fragment_title">列表</string>
+    <string name="app_component_fragment_title">应用元件</string>
+    <string name="dns_fragment_title">DNS</string>
+    <string name="settings_fragment_title">设置</string>
+    <string name="enable_apps_dialog_title">启用所有应用</string>
+    <string name="enable_apps_dialog_text">确定要启用所有应用？</string>
+    <string name="backup_database_dialog_title">备份数据库</string>
+    <string name="backup_database_dialog_text">您要使用目前数据库覆盖已存在的备份？</string>
+    <string name="restore_database_dialog_title">还原数据库</string>
+    <string name="restore_database_dialog_text">您要使用备份数据库取代目前所有设置吗？</string>
+    <string name="not_supported_dialog_title">应用不支持</string>
+    <string name="no_internet_connection_dialog_title">无网络连线</string>
+    <string name="version">版本 %1$s</string>
+    <string name="permission_fragment_title">权限</string>
+    <string name="service_fragment_title">服务</string>
+    <string name="receiver_fragment_title">接收器</string>
+    <string name="dialog_set_dns_title">设置 DNS</string>
+    <string name="dialog_set_dns_info">
+        设置主要与次要 DNS。
+        \n留空将恢复默认值。
+    </string>
+    <string name="update_provider_title">更新host来源</string>
+    <string name="update_provider_summary">启用域名规则时，更新host来源</string>
+    <string name="dialog_set_password_title">设置密码</string>
+    <string name="dialog_set_password_summary">使用密码保护本应用</string>
+    <string name="dialog_enter_password_title">输入密码</string>
+    <string name="dialog_enter_password_summary">此应用已被密码保护</string>
+    <string name="dialog_wrong_password">密码错误！</string>
+    <string name="dialog_empty_password">密码不可为空！</string>
+    <string name="set_password_title">使用密码保护 Adhell3</string>
+    <string name="set_password_summary">如果你忘记密码，请重新安装 Adhell3。</string>
+</resources>

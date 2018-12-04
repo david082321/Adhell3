@@ -27,9 +27,9 @@ public abstract class UserListFragment extends Fragment {
             @Override
             public void onSuccess(String item) {
                 if (item.indexOf('|') == -1) {
-                    Toast.makeText(context, "Domain has been added", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "已新增網域", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(context, "Rule has been added", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "已新增規則", Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -47,9 +47,9 @@ public abstract class UserListFragment extends Fragment {
             @Override
             public void onSuccess(String item) {
                 if (item.indexOf('|') == -1) {
-                    Toast.makeText(context, "Domain has been removed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "已移除網域", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(context, "Rule has been removed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "已移除規則", Toast.LENGTH_SHORT).show();
                 }
             }
 

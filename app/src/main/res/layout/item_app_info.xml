@@ -52,7 +52,7 @@
         android:layout_toLeftOf="@id/switchDisable"
         android:layout_toEndOf="@id/appIcon"
         android:layout_toRightOf="@id/appIcon"
-        android:text="System"
+        android:text="系統"
         android:textSize="12sp"
         android:textStyle="italic"/>
 

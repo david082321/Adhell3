@@ -89,7 +89,7 @@ public class AppCache {
         @Override
         protected void onPreExecute() {
             if (dialog != null) {
-                dialog.setMessage("Caching apps, please wait...");
+                dialog.setMessage("正在讀取應用程式...");
                 dialog.show();
             }
         }
@@ -203,8 +203,8 @@ public class AppCache {
             Context context = contextWeakReference.get();
             if (th != null && context != null) {
                 new AlertDialog.Builder(context)
-                        .setTitle("Error")
-                        .setMessage("Something went wrong when caching apps, please refresh the app list. Error: \n\n" + th.getMessage())
+                        .setTitle("錯誤")
+                        .setMessage("讀取所有程式時出現問題，請重新整理程式列表。 錯誤：\n\n" + th.getMessage())
                         .show();
             }
         }

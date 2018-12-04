@@ -135,7 +135,7 @@ public class BlockUrlProviderAdapter extends ArrayAdapter<BlockUrlProvider> {
                 adapter.notifyDataSetChanged();
 
                 if (totalUrls > AdhellAppIntegrity.BLOCK_URL_LIMIT) {
-                    String message = String.format("The total number of unique domains %d exceeds the maximum limit of %d",
+                    String message = String.format("攔截獨立的網址總數：%d，已超過限制：%d",
                                     totalUrls, AdhellAppIntegrity.BLOCK_URL_LIMIT);
                     Toast.makeText(context, message, Toast.LENGTH_LONG).show();
                 } else {

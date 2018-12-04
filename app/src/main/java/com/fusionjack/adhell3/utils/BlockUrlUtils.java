@@ -87,13 +87,13 @@ public class BlockUrlUtils {
             if (url.indexOf('|') == -1) {
                 list.add(url);
                 if (enableLog) {
-                    LogUtils.getInstance().writeInfo("Domain: " + url, handler);
+                    LogUtils.getInstance().writeInfo("網域：" + url, handler);
                 }
                 userBlockUrlCount++;
             }
         }
         if (enableLog) {
-            LogUtils.getInstance().writeInfo("Size: " + userBlockUrlCount, handler);
+            LogUtils.getInstance().writeInfo("數量：" + userBlockUrlCount, handler);
         }
         return list;
     }
@@ -132,7 +132,7 @@ public class BlockUrlUtils {
     }
 
     public static boolean isDomainLimitAboveDefault() {
-        int defaultDomainLimit = 15000;
+        int defaultDomainLimit = 20000;
         int domainLimit = AdhellAppIntegrity.BLOCK_URL_LIMIT;
         return domainLimit > defaultDomainLimit;
     }

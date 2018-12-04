@@ -158,7 +158,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
 
         @Override
         protected void onPreExecute() {
-            dialog.setMessage("Backup database is running...");
+            dialog.setMessage("正在備份資料庫...");
             dialog.show();
         }
 
@@ -179,11 +179,11 @@ public class SettingsFragment extends PreferenceFragmentCompat {
             }
 
             if (message == null) {
-                builder.setMessage("Backup database is finished");
-                builder.setTitle("Info");
+                builder.setMessage("資料庫備份完成");
+                builder.setTitle("資訊");
             } else {
                 builder.setMessage(message);
-                builder.setTitle("Error");
+                builder.setTitle("錯誤");
             }
             builder.create().show();
         }
@@ -200,7 +200,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
 
         @Override
         protected void onPreExecute() {
-            dialog.setMessage("Restore database is running...");
+            dialog.setMessage("正在還原資料庫...");
             dialog.show();
         }
 
@@ -215,7 +215,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
 
                 DatabaseFactory.getInstance().restoreDatabase();
 
-                publishProgress("Updating all providers...");
+                publishProgress("正在更新來源...");
                 AdhellFactory.getInstance().updateAllProviders();
 
                 return null;
@@ -236,11 +236,11 @@ public class SettingsFragment extends PreferenceFragmentCompat {
             }
 
             if (message == null) {
-                builder.setMessage("Restore database is finished. Turn on Adhell.");
-                builder.setTitle("Info");
+                builder.setMessage("資料庫還原完成，開啟 Adhell。");
+                builder.setTitle("資訊");
             } else {
                 builder.setMessage(message);
-                builder.setTitle("Error");
+                builder.setTitle("錯誤");
             }
             builder.create().show();
         }

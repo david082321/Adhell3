@@ -31,26 +31,26 @@ public final class AppPermissionUtils {
     }
 
     public static String getProtectionLevelLabel(int level) {
-        String protLevel = "unknown";
+        String protLevel = "未知";
         switch (level & android.content.pm.PermissionInfo.PROTECTION_MASK_BASE) {
             case android.content.pm.PermissionInfo.PROTECTION_DANGEROUS:
-                protLevel = "dangerous";
+                protLevel = "危險";
                 break;
             case android.content.pm.PermissionInfo.PROTECTION_NORMAL:
-                protLevel = "normal";
+                protLevel = "一般";
                 break;
             case android.content.pm.PermissionInfo.PROTECTION_SIGNATURE:
-                protLevel = "signature";
+                protLevel = "簽名";
                 break;
             case android.content.pm.PermissionInfo.PROTECTION_SIGNATURE_OR_SYSTEM:
-                protLevel = "signatureOrSystem";
+                protLevel = "簽名或系統";
                 break;
         }
         if ((level & android.content.pm.PermissionInfo.PROTECTION_FLAG_PRIVILEGED) != 0) {
-            protLevel += "|privileged";
+            protLevel += "|特權";
         }
         if ((level & android.content.pm.PermissionInfo.PROTECTION_FLAG_DEVELOPMENT) != 0) {
-            protLevel += "|development";
+            protLevel += "|開發";
         }
         if ((level & android.content.pm.PermissionInfo.PROTECTION_FLAG_APPOP) != 0) {
             protLevel += "|appop";
@@ -59,19 +59,19 @@ public final class AppPermissionUtils {
             protLevel += "|pre23";
         }
         if ((level & android.content.pm.PermissionInfo.PROTECTION_FLAG_INSTALLER) != 0) {
-            protLevel += "|installer";
+            protLevel += "|安裝器";
         }
         if ((level & android.content.pm.PermissionInfo.PROTECTION_FLAG_VERIFIER) != 0) {
-            protLevel += "|verifier";
+            protLevel += "|驗證";
         }
         if ((level & android.content.pm.PermissionInfo.PROTECTION_FLAG_PREINSTALLED) != 0) {
-            protLevel += "|preinstalled";
+            protLevel += "|內建";
         }
         if ((level & android.content.pm.PermissionInfo.PROTECTION_FLAG_SETUP) != 0) {
-            protLevel += "|setup";
+            protLevel += "|設定";
         }
         if ((level & android.content.pm.PermissionInfo.PROTECTION_FLAG_RUNTIME_ONLY) != 0) {
-            protLevel += "|runtime";
+            protLevel += "|執行";
         }
         return protLevel;
     }
