@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/domainRulesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/domainStatusTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/domain_rules_enabled"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/domainInfoTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/domainStatusTextView"
+            android:layout_toStartOf="@id/domainRulesSwitch"
+            android:text="@string/domain_rules_info"
+            android:textSize="12sp"/>
+
+        <Switch
+            android:id="@+id/domainRulesSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/firewallRulesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/firewallStatusTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/firewall_rules_enabled"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/firewallInfoTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firewallStatusTextView"
+            android:layout_toStartOf="@id/firewallRulesSwitch"
+            android:text="@string/firewall_rules_info"
+            android:textSize="12sp"/>
+
+        <Switch
+            android:id="@+id/firewallRulesSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/appDisablerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/disablerStatusTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_disabler_enabled"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/disablerInfoTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disablerStatusTextView"
+            android:layout_toStartOf="@id/appDisablerSwitch"
+            android:text="@string/app_disabler_info"
+            android:textSize="12sp"/>
+
+        <Switch
+            android:id="@+id/appDisablerSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/appComponentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/appComponentStatusTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_component_enabled"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appComponentInfoTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appComponentStatusTextView"
+            android:layout_toStartOf="@id/appComponentSwitch"
+            android:text="@string/app_component_toggle_info"
+            android:textSize="12sp"/>
+
+        <Switch
+            android:id="@+id/appComponentSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="@string/last_day_blocked"
+        android:background="@drawable/border"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ListView
+            android:id="@+id/blockedDomainsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

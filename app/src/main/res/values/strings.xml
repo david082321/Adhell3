@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name" translatable="false">Adhell 3</string>
+    <string name="domain_rules_enabled">Domain rules are enabled.</string>
+    <string name="domain_rules_disabled">Domain rules are disabled.</string>
+    <string name="domain_rules_info">
+        Blacklist: %1$d domains | Whitelist: %2$d domains and %3$d apps
+    </string>
+    <string name="firewall_rules_enabled">Firewall rules are enabled.</string>
+    <string name="firewall_rules_disabled">Firewall rules are disabled.</string>
+    <string name="firewall_rules_info">
+        Mobile data: %1$d apps | Wi-Fi data: %2$d apps | Custom: %3$d apps
+    </string>
+    <string name="app_disabler_enabled">App disabler is enabled.</string>
+    <string name="app_disabler_disabled">App disabler is disabled.</string>
+    <string name="app_disabler_info">
+        %1$d apps are disabled.
+    </string>
+    <string name="app_component_enabled">App component is enabled.</string>
+    <string name="app_component_disabled">App component is disabled.</string>
+    <string name="app_component_toggle_info">
+        %1$d permissions, %2$d services and %3$d receivers are disabled.
+    </string>
+    <string name="adhell_not_supported">Adhell is not yet supported on your device.</string>
+    <string name="enable_adhell_title">Enable Adhell</string>
+    <string name="enable_adhell_info">
+        To enable Adhell, you must activate Admin mode for this app.
+        \nAdhell uses Samsung Knox APIs which require the Device Administrator permission.
+    </string>
+    <string name="turn_on_admin">Turn On Admin</string>
+    <string name="license_key_info">
+        Adhell utilizes Samsung Knox SDK which requires a Samsung Knox License (SKL) license key.
+        \nA developer license key needs to be renewed every 3 months.
+    </string>
+    <string name="license_key">Samsung Knox License (SKL) key</string>
+    <string name="license_backward_key">Backwards-compatible key</string>
+    <string name="activate_license">Activate License</string>
+    <string name="license_activated">License Activated</string>
+    <string name="enable_admin">Enable Admin</string>
+    <string name="admin_enabled">Admin Enabled</string>
+    <string name="no_internet_connection">Your device is not connected to the Internet.</string>
+    <string name="activating_knox_license">Activating…</string>
+    <string name="block_button_text_turn_off">Turn Off</string>
+    <string name="block_button_text_turn_on">Turn On</string>
+    <string name="whitelist_info">
+        Whitelist domains to bypass the firewall.
+        \nToggle Domain rules to apply changes.
+    </string>
+    <string name="delete_app">Disable and Delete Adhell</string>
+    <string name="delete_app_summary">Disable all features and uninstall Adhell</string>
+    <string name="delete_app_dialog_title">Delete Adhell</string>
+    <string name="delete_app_dialog_text">Do you really want to uninstall Adhell and enable all disabled apps?</string>
+    <string name="dns_1_address">DNS 1 Address</string>
+    <string name="dns_2_address">DNS 2 Address</string>
+    <string name="set_dns_button_text">Set DNS</string>
+    <string name="dns_info">
+        Edit DNS only if you know the issues it can cause.
+        \nToggle Domain rules to apply changes.
+    </string>
+    <string name="blacklist_info">
+        Blacklist domains or define firewall denial rules.
+        \nToggle Domain rules to apply domain changes.
+        \nToggle Firewall rules to apply firewall changes.
+    </string>
+    <string name="dialog_blacklist_domain_title">Add Domain</string>
+    <string name="dialog_blacklist_domain_info">Domains support wildcards, e.g. *facebook.com</string>
+    <string name="dialog_blacklist_rule_title">Add Firewall Rule</string>
+    <string name="dialog_blacklist_rule_info">
+        Firewall rule format:
+        \n\tpackageName|ipAddress|port
+        \nE.g. block port 53 for every IP in Chrome:
+        \n\tcom.android.chrome|*|53
+    </string>
+    <string name="dialog_whitelist_domain_title">Add Domain</string>
+    <string name="dialog_whitelist_domain_info">
+        Domains support wildcards, e.g. *facebook.com
+        \nDomain rule format for a specific app:
+        \n\tpackageName|domain
+    </string>
+    <string name="dialog_add_provider_title">Add Provider</string>
+    <string name="dialog_add_provider_info">
+        Remote: https://adaway.org/hosts.txt
+        \nInternal: file:///mnt/sdcard/hosts.txt
+    </string>
+    <string name="dialog_enable_components_title">Enable All Components</string>
+    <string name="dialog_enable_components_info">
+        This will enable all apps\' permissions, services and receivers.
+        \nSamsung Knox doesn\'t have an API to clear disabled components.
+        \nTherefore, if they are still disabled after this operation, you need to uninstall Adhell to enable them.
+        \n\nDo you really want to enable all apps\' components?
+    </string>
+    <string name="dialog_toggle_title">Custom DNS for All Apps</string>
+    <string name="dialog_toggle_info">
+        Do you really want to apply or remove custom DNS for all apps?
+        \nApplying custom DNS to all apps might cause your internet connection to malfunction.
+    </string>
+    <string name="dialog_add_to_whitelist_question">Add the selected domain to your whitelist?</string>
+    <string name="home_bottombar_title" translatable="false">Home</string>
+    <string name="package_disabler_fragment_title">Disable Apps</string>
+    <string name="apps_management_bottombar_title">Apps</string>
+    <string name="domains_bottombar_title">Domains</string>
+    <string name="last_day_blocked">Domains blocked in past 24 hours:&#160;</string>
+    <string name="check_input_dns">Invalid DNS format.</string>
+    <string name="changed_dns">DNS addresses have been set. Toggle Domain rules to apply changes.</string>
+    <string name="restored_dns">DNS has been restored to defaults. Toggle Domain rules to apply changes.</string>
+    <string name="delete_url">Delete URL</string>
+    <string name="provider_info">
+        In addition to Adhell\'s standard package, you can add links to remote and local hosts lists.
+        \nAdhell can block up to %1$d unique domains.
+        \nToggle Domain rules to apply changes.
+    </string>
+    <string name="total_unique_domains">Total unique domains: %1$d</string>
+    <string name="others_bottombar_title">Other</string>
+    <string name="mobile_restricter_fragment_title">Mobile Data</string>
+    <string name="wifi_restricter_fragment_title">Wi-Fi Data</string>
+    <string name="enabled_all_apps">Enabling all apps…</string>
+    <string name="total_domains">Total domains:&#160;</string>
+    <string name="package_disabler_info">
+        Disabling system apps may cause the device to malfunction.
+        \nIf app disabler toggle is enabled, changes take effect immediately.
+    </string>
+    <string name="mobile_restricter_info">
+        Block or allow an app\'s mobile data usage.
+        \nToggle Firewall rules to apply changes.
+    </string>
+    <string name="wifi_restricter_info">
+        Block or allow an app\'s Wi-Fi data usage.
+        \nToggle Firewall rules to apply changes.
+    </string>
+    <string name="whitelisted_app_info">
+        Whitelist an app to bypass the firewall.
+        \nToggle Domain rules to apply changes.
+    </string>
+    <string name="app_component_info">
+        Disable app components (permissions, services and receivers).
+        \nIf app component toggle is enabled, changes take effect immediately.
+    </string>
+    <string name="app_permission_info">
+        Only protection level of \'dangerous\' can be disabled.
+        \nDisabling a permission will also disable other permissions from the same group.
+    </string>
+    <string name="app_service_info">
+        Disabling a service may crash the app.
+        \nOnce the service is disabled, it will be removed from the app.
+        \nSamsung Knox doesn\'t have an API to list disabled services.
+        \nTherefore, if the disabled services don\'t appear below, you need to reinstall the app.
+    </string>
+    <string name="app_receiver_info">
+        Disabling a receiver may crash the app.
+        \nOnce the receiver is disabled, it will be removed from the app.
+        \nSamsung Knox doesn\'t have an API to list disabled receivers.
+        \nTherefore, if the disabled receivers don\'t appear below, you need to reinstall the app.
+    </string>
+    <string name="backup_database">Backup Database</string>
+    <string name="backup_database_summary">Backup all settings into a backup file in internal storage.</string>
+    <string name="restore_database">Restore Database</string>
+    <string name="restore_database_summary">Restore all settings from a backup file. A \'storage\' permission needs to be granted.</string>
+    <string name="whitelist_fragment_title">App Whitelist</string>
+    <string name="blacklist_url_fragment_title">Blacklist</string>
+    <string name="whitelist_url_fragment_title">Whitelist</string>
+    <string name="provider_url_fragment_title">Providers</string>
+    <string name="list_url_fragment_title">List</string>
+    <string name="app_component_fragment_title">App Component</string>
+    <string name="dns_fragment_title">DNS</string>
+    <string name="settings_fragment_title">Settings</string>
+    <string name="enable_apps_dialog_title">Enable All Apps</string>
+    <string name="enable_apps_dialog_text">Do you really want to enable all apps?</string>
+    <string name="backup_database_dialog_title">Backup Database</string>
+    <string name="backup_database_dialog_text">Do you really want to backup the database and replace any existing backup?</string>
+    <string name="restore_database_dialog_title">Restore Database</string>
+    <string name="restore_database_dialog_text">Do you really want to restore the database and replace your entire setup?</string>
+    <string name="not_supported_dialog_title">App Not Supported</string>
+    <string name="no_internet_connection_dialog_title">No Internet Connection</string>
+    <string name="version">Version %1$s</string>
+    <string name="permission_fragment_title">Permissions</string>
+    <string name="service_fragment_title">Services</string>
+    <string name="receiver_fragment_title">Receivers</string>
+    <string name="dialog_set_dns_title">Set DNS</string>
+    <string name="dialog_set_dns_info">
+        Set primary and secondary DNS.
+        \nLeave it empty to restore to default.
+    </string>
+    <string name="update_provider_title">Update host providers</string>
+    <string name="update_provider_summary">Update host providers when enabling domain rules</string>
+    <string name="dialog_set_password_title">Set password</string>
+    <string name="dialog_set_password_summary">Protect this app with a password</string>
+    <string name="dialog_enter_password_title">Enter password</string>
+    <string name="dialog_enter_password_summary">Enter the password to use this app</string>
+    <string name="dialog_wrong_password">The password is wrong!</string>
+    <string name="dialog_empty_password">The password cannot be empty!</string>
+    <string name="set_password_title">Protect Adhell3 with a password</string>
+    <string name="set_password_summary">If you forget the password, you need to uninstall Adhell3.</string>
+</resources>
