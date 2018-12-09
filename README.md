@@ -1,7 +1,5 @@
 ## 傳送門
-1. [準備](./README.md#建立-apk-的準備工作)
-1. [建立](./README.md#如何建立-apk)
-1. [安裝](./README.md#準備開始使用-Adhell3)
+[懶人包](./README.md#譯者整理編譯步驟)
 
 
 # 免責聲明
@@ -145,3 +143,23 @@ Explanation:
 * Big thanks to @mmotti who provides a host file for Adhell3. You can visit his Github here: https://github.com/mmotti/mmotti-host-file
 * Adhell3 is using icons from https://material.io/icons
 * Chinese Translation: @david082321
+
+
+# 譯者整理編譯步驟
+## 前置作業
+1. 安裝 JDK 8：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+2. 安裝 Android Studio https://developer.android.com/studio/index.html
+## 編譯
+3. 下載原始碼：https://github.com/david082321/Adhell3/archive/master.zip
+4. 開啟 `app\app.properties`
+5. 第一行改成你的包名，注意不能有中文，只能有英文、數字和英文句點。不能由數字開頭，不能由英文句點結尾，英文句點後第一個不能是數字。
+6. 第二行是網域數量限制。（預設15000，我改成10萬了）
+7. 第三行是`停用程式`功能。如果需要開啟，請改成 `enable.disableApps=true`
+8. 第四行是`程式元件`功能。如果需要開啟，請改成 `enable.appComponent=true`
+9. 第五行是`網域前綴`功能。如果需要開啟，請改成 `domain.prefix=true`
+10. (Windows系統) 按住Shift按鍵，右鍵選擇剛才下載的`Adhell3-master`資料夾，選擇在此開啟命令提示視窗。
+ps. 或是可以 `Win + R` -> `cmd` -> `確定` -> `cd C:/Download/Adhell3-master` (以你電腦的資料夾路徑取代)
+11. 手機開啟 `adb偵錯`，並且連上電腦，給予授權。
+11. 輸入指令 `gradlew clean installDebug`，然後按 `Enter`。
+12. 等待安裝完成。
+13. [開始使用](./README.md#準備開始使用-Adhell3)。
