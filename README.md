@@ -151,8 +151,7 @@ Explanation:
 2. 安裝 Android Studio https://developer.android.com/studio/index.html
 ## 編譯
 3. 下載原始碼：https://github.com/david082321/Adhell3/archive/master.zip
-4. 下載並正確放置
-[KNOX](./README.md#Knox SDK)
+4. 下載並正確放置 [Knox SDK](./README.md#Knox-SDK)
 5. 開啟原始碼裡面的 `app\app.properties`
 6. 第一行改成你的包名，注意不能有中文，只能有英文、數字和英文句點。不能由數字開頭，不能由英文句點結尾，英文句點後第一個不能是數字。
 7. 第二行是`網域數量限制`。（預設15000，我改成10萬了）
