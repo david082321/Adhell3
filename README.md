@@ -151,15 +151,20 @@ Explanation:
 2. 安裝 Android Studio https://developer.android.com/studio/index.html
 ## 編譯
 3. 下載原始碼：https://github.com/david082321/Adhell3/archive/master.zip
-4. 開啟 `app\app.properties`
+4. 開啟原始碼裡面的 `app\app.properties`
 5. 第一行改成你的包名，注意不能有中文，只能有英文、數字和英文句點。不能由數字開頭，不能由英文句點結尾，英文句點後第一個不能是數字。
-6. 第二行是網域數量限制。（預設15000，我改成10萬了）
+6. 第二行是`網域數量限制`。（預設15000，我改成10萬了）
 7. 第三行是`停用程式`功能。如果需要開啟，請改成 `enable.disableApps=true`
 8. 第四行是`程式元件`功能。如果需要開啟，請改成 `enable.appComponent=true`
 9. 第五行是`網域前綴`功能。如果需要開啟，請改成 `domain.prefix=true`
-10. (Windows系統) 按住Shift按鍵，右鍵選擇剛才下載的`Adhell3-master`資料夾，選擇在此開啟命令提示視窗。
-ps. 或是可以 `Win + R` -> `cmd` -> `確定` -> `cd C:/Download/Adhell3-master` (以你電腦的資料夾路徑取代)
-11. 手機開啟 `adb偵錯`，並且連上電腦，給予授權。
-11. 輸入指令 `gradlew clean installDebug`，然後按 `Enter`。
-12. 等待安裝完成。
-13. [開始使用](./README.md#準備開始使用-Adhell3)。
+10. 儲存`app.properties`。
+11. 在 Android Studio 中打開 Adhell3 項目
+12. 安裝缺少的SDK、build-tools和其他提示的東西
+- ps. 如果出現以下錯誤 `Configuration on demand is not supported`，請看此評論解決： https://gitlab.com/fusionjack/adhell3/commit/1fb8ea98cf43507b32db56d9fb584b33dc6579f1#note_74463246
+13. 完成後，再進行以下步驟。
+14. (Windows系統) 按住Shift按鍵，右鍵選擇剛才下載的`Adhell3-master`資料夾，選擇在此開啟命令提示視窗。
+- ps. 或是可以 `Win + R` -> `cmd` -> `確定` -> `cd C:/Download/Adhell3-master` (以你電腦的資料夾路徑取代)
+15. 手機開啟 `adb偵錯`，並且連上電腦，給予授權。
+16. 輸入指令 `gradlew clean installDebug`，然後按 `Enter`。
+17. 等待安裝完成。
+18. [開始使用](./README.md#準備開始使用-Adhell3)。
